@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<link rel="shortcut icon" href="images/icon.png" type="image/x-png"/>
+        <!-- META -->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <!-- TITLE -->
+        <title>iTr Defenser</title>
+
+        <!-- Main StyleSheet -->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="style-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="css/libs/animate.css">
+
+
+		<!-- bxSlider CSS file -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+
+        <!-- LayerSlider stylesheet -->
+        <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+        <!-- External libraries: jQuery & GreenSock -->
+        <script src="layerslider/js/jquery.js" type="text/javascript"></script>
+        <script src="layerslider/js/greensock.js" type="text/javascript"></script>
+        <!-- LayerSlider script files -->
+        <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+        <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+
+		<!-- bxSlider Javascript file -->
+        <script src="js/jquery.bxslider.js"></script>
+        <script>
+		$(document).ready(function(){
+		$('.bxslider').bxSlider({
+								
+								pager: false,
+								controls: true,
+								auto: true
+								
+								
+								});
+		});
+		</script>
+
+
+
+		<link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
+		<script src="lightbox/jquery.fancybox.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function() {
+                                           
+                    $('.fancybox').fancybox();
+ 		
+                });
+        </script>
+
+
+        <!-- GOTO TOP JQUERY -->
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('#gotop').fadeIn();	
+                } else {
+                    $('#gotop').fadeOut();
+                }
+            });
+         
+            $('#gotop').click(function() {
+                $('body,html').animate({scrollTop:0},800);
+            });	
+        });
+        </script>
+            
+
+
+		<!-- HEADER JQUERY -->
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() >= 200) {
+                    $('.header').addClass("header_fix");	
+                } else {
+                   $('.header').removeClass("header_fix");
+                }
+            });	
+        });
+        </script>
+        
+        
+        <script type="text/javascript">
+        
+		if($(window).width() <= 900){
+		$(document).ready(function() {
+                                    
+									
+									
+                    $('.mobile .title').click(function() {
+												
+												$(this).next("ul").slideToggle();
+												$(this).toggleClass("minus");
+												
+												});
+					
+					
+ 		
+                });
+		
+		}
+        </script>
+                            
+</head>
+
+<body>
+        
+        
+    
+        <div class="header">
+        <div class="container">
+        
+        			<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
+                    
+                    <div class="nav mobile">
+                    <div class="title">Menu <span class="fa "></span></div>
+                    <ul>
+                    <li><a href="#faqs_part">Comprar</a></li>
+                    <li><a href="#features">Como Comprar</a></li>
+                    <li><a href="#testimonials_part">Downloads </a></li>
+                    <li><a href="#pricing_part">Sobre</a></li>
+                    <li><a href="#contact_part">Contato</a></li>
+                    <li><a href="login/index.php">Fazer login</a></li>
+					<li><a href="cadastro/cadastro.html">Cadastro</a></li>
+                    </ul>
+                    </div>
+        
+        </div>
+        </div>
+        
+        
+
+
+        
+       
+        
+        
+        <div><img src="../images/bannersuporte2.png" alt="" /></div>
+        <div class="common_section" id="contact_part">
+        <div class="container">
+        
+        			<h2>Como podemos ajudar?</h2>
+                    <h4>Suporte 24h!</h4>
+                    
+                   
+                   	<br clear="all" />
+                    
+                    
+                    <form method="post" class="hpform" id="formulario" action="dados.php">
+                    <input type="text" placeholder="nome" name="nome" />
+                    <input type="Email" placeholder="email" name="email"/>
+                    <textarea placeholder="Mensagem" type= text name="mensagem" ></textarea>
+                    <input type="submit" value="ENVIAR" />
+                    </form>
+                    
+                   
+                    
+        
+        </div>
+        </div>
+        
+        
+        
+        
+        <div class="subscribe_section" id="subscribe_part">
+        <div class="container">
+        
+        			<h2>Subscribe to our newsletter</h2>
+                    
+                   
+                   	<br clear="all" />
+                    
+                    
+                    <form method="post">
+                    <input type="email" placeholder="Enter your e-Mail" />
+                    <input type="submit" value="SUBSCRIBE" />
+                    </form>
+                    
+                   
+                    
+        
+        </div>
+        </div>
+        
+        
+        
+        
+        <div class="common_section">
+        <div class="container">
+        
+        	
+            		<a href="#" class="footer_logo"><img src="images/logo.png" alt="" /></a>
+                   
+					<div class="copyright">Copyright 2016 All Right Reserved - <a href="http://www.pfind.com/goodies/landiya/">Landiya</a> Theme By <a href="http://www.pfind.com/goodies/">pFind.com Goodies</a>.</div>                    
+        
+        </div>
+        </div>
+        
+        
+        </div><!--wrapper-->
+
+
+		<script>
+            jQuery("#layerslider").layerSlider({
+                responsive: false,
+                responsiveUnder: 1100,
+                layersContainer: 1100,
+                skin: 'fullwidth',
+                hoverPrevNext: false,
+                skinsPath: 'layerslider/skins/'
+            });
+        
+        
+        </script>
+
+		<script src="js/wow.js"></script>
+        <script>
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset:       100
+          }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+          var section = document.createElement('section');
+          section.className = 'section--purple wow fadeInDown';
+          this.parentNode.insertBefore(section, this);
+        };
+        </script>
+
+		<script type="text/javascript">
+		$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+		$('html,body').animate({
+		scrollTop: target.offset().top - 132
+		}, 2000);
+		return false;
+		}
+		}
+		});
+		});
+        </script>
+        
+        
+		<script type="text/javascript">
+        
+        
+        $(document).ready(function() {
+        
+        if($(window).width() <= 1200){
+        
+        
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+        $('html,body').animate({
+        scrollTop: target.offset().top - 132
+        }, 2000);
+        return false;
+        }
+        }
+        });
+        });
+        
+        
+        
+        }
+        
+        });
+        
+        
+        </script> 
+             
+
+		
+</body>
+</html>
